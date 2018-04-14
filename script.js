@@ -1,4 +1,5 @@
 
+let salaryCount = 0;
 
 $(document).ready(onReady);
 
@@ -9,6 +10,7 @@ function onReady() {
 function clickedHandler() {
     console.log('Button has been clicked');
     addNewEmployee();
+    addExpenses();
 }
 
 function addNewEmployee() {
@@ -21,4 +23,10 @@ function addNewEmployee() {
             '<td>' + $('#annualSalaryInput').val() + '</td>' +
         '</tr>'
     )
+}
+
+function addExpenses() {
+    let updateMonthlyExpenses = $('#annualSalaryInput').val();
+    salaryCount += (updateMonthlyExpenses / 12);
+    $('#totalMonthlyCounter').text(salaryCount);
 }
