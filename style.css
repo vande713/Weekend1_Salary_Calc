@@ -1,0 +1,52 @@
+
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#h1-div {
+    background-color: #626263;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 6px;
+}
+
+thead {
+    background-color: #999999;
+}
+
+tr:nth-child(even){
+    background-color: #d9d9d9;
+}
+
+.inputs {
+    width: 235px;
+    height: 25px;
+    border-color: black;
+    font-size: 20px;
+}
+
+/* #firstNameInput {
+    margin-left: 100px;
+} */
+
+#submitButton {
+    /* position: absolute;
+    right: 0px; */
+    float: right;
+    font-size: 20px;
+}

@@ -28,5 +28,5 @@ function addNewEmployee() {
 function addExpenses() {
     let updateMonthlyExpenses = $('#annualSalaryInput').val();
     salaryCount += (updateMonthlyExpenses / 12);
-    $('#totalMonthlyCounter').text(salaryCount);
+    $('#totalMonthlyCounter').text('$' + salaryCount.toFixed(2));
 }

@@ -10,46 +10,51 @@
     <title>Salary Calculator</title>
 </head>
 <body>
-    <h1>Salary Calculator</h1>
+    <div id="h1-div">
+        <h1>Salary Calculator</h1>
+    </div>
+    <div id="contents">
+        <h3>Add Employee</h3>
+        <input type="text" placeholder="First Name" id="firstNameInput" class="inputs"/>
+        <input type="text" placeholder="Last Name" id="lastNameInput" class="inputs"/>
+        <input type="number" placeholder="ID" id="idInput" class="inputs"/>
+        <input type="text" placeholder="Title" id="titleInput" class="inputs"/>
+        <input type="number" placeholder="Annual Salary" id="annualSalaryInput" class="inputs"/>
+        <p>
+            <button id="submitButton">Submit</button>
+        </p>    
 
-    <h3>Add Employee</h3>
-    <input type="text" placeholder="First Name" id="firstNameInput"/>
-    <input type="text" placeholder="Last Name" id="lastNameInput"/>
-    <input type="number" placeholder="ID" id="idInput"/>
-    <input type="text" placeholder="Title" id="titleInput"/>
-    <input type="number" placeholder="Annual Salary" id="annualSalaryInput"/>
-    <button id="submitButton">Submit</button>
+        <h3>Employees</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Annual Salary</th>
+                </tr>
+            </thead>
+            <tbody id="employeeList">
+                <!-- <tr>
+                    <td>Sue</td>
+                    <td>Johnson</td>
+                    <td>34534</td>
+                    <td>Manager</td>
+                    <td>40000</td>
+                </tr>
+                <tr>
+                    <td>Mark</td>
+                    <td>Harrison</td>
+                    <td>54323</td>
+                    <td>Manager</td>
+                    <td>40000</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
 
-    <h3>Employees</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>ID</th>
-                <th>Title</th>
-                <th>Annual Salary</th>
-            </tr>
-        </thead>
-        <tbody id="employeeList">
-            <!-- <tr>
-                <td>Sue</td>
-                <td>Johnson</td>
-                <td>34534</td>
-                <td>Manager</td>
-                <td>40000</td>
-            </tr>
-            <tr>
-                <td>Mark</td>
-                <td>Harrison</td>
-                <td>54323</td>
-                <td>Manager</td>
-                <td>40000</td>
-            </tr> -->
-        </tbody>
-    </table>
-
-    <h3 id="monthly">Total Monthly: <span id="totalMonthlyCounter">0</span></h3>
+    <h3 id="monthly">Total Monthly: <span id="totalMonthlyCounter"></span></h3>
     <!-- <h2 id="totalMonthlyCounter"></h2> -->
 
 </body>
