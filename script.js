@@ -20,7 +20,7 @@ function addNewEmployee() {
             '<td>' + $('#lastNameInput').val() + '</td>' +
             '<td>' + $('#idInput').val() + '</td>' +
             '<td>' + $('#titleInput').val() + '</td>' +
-            '<td>' + $('#annualSalaryInput').val() + '</td>' +
+            '<td>' + '$'+$('#annualSalaryInput').val() + '</td>' +
         '</tr>'
     )
 }

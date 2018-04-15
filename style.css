@@ -4,6 +4,14 @@ body {
     padding-right: 100px;
 }
 
+#addEmployee {
+    margin-top: 70px;
+}
+
+#employees {
+    margin-top: 100px;
+}
+
 h1 {
     text-align: center;
     color: white;
