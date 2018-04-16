@@ -1,15 +1,31 @@
 
+#addEmployee {
+    margin-top: 70px;
+}
+
+#annualSalary {
+    width: 278px;
+}
+
 body {
     padding-left: 100px;
     padding-right: 100px;
 }
 
-#addEmployee {
-    margin-top: 70px;
+.delete {
+    width: 189px;
+}
+
+#deleted {
+    width: 202px;
 }
 
 #employees {
     margin-top: 100px;
+}
+
+#firstName {
+    width: 220px;
 }
 
 h1 {
@@ -21,6 +37,26 @@ h1 {
     background-color: #626263;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+#id {
+    width: 110px;
+}
+
+.inputs {
+    width: 235px;
+    height: 25px;
+    border-color: black;
+    font-size: 20px;
+}
+
+#lastName {
+    width: 242px;
+}
+
+#submitButton {
+    float: right;
+    font-size: 20px;
 }
 
 table {
@@ -37,24 +73,10 @@ thead {
     background-color: #999999;
 }
 
+#title {
+    width: 171px;
+}
+
 tr:nth-child(even){
     background-color: #d9d9d9;
-}
-
-.inputs {
-    width: 235px;
-    height: 25px;
-    border-color: black;
-    font-size: 20px;
-}
-
-/* #firstNameInput {
-    margin-left: 100px;
-} */
-
-#submitButton {
-    /* position: absolute;
-    right: 0px; */
-    float: right;
-    font-size: 20px;
 }
