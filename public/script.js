@@ -1,10 +1,13 @@
 
 let salaryCount = 0; // this variable is keeping track of salary
 
+let employeeArray = [];
+
 $(document).ready(onReady);
 
 function onReady() {
     $('#submitButton').on('click', clickedHandler);
+    $('#submitButton').on('click', addEmployee);
 }
 
 function clickedHandler() {
@@ -13,6 +16,7 @@ function clickedHandler() {
     addExpenses();
     deleteButton();
     removeFields();
+    // addEmployee();
 }
 
 function addNewEmployee() { // this function adds/appends name, ID, title and salary for each new employee
@@ -49,7 +53,7 @@ function deleteButton() { // this function deletes the employee information when
 // the code below this line is only for Hard Mode in which we have to create a Class Employee and store new employee info into array.
 // also note this is not finished
 
-let employeeArray = [];
+
 
 class Employee {
     constructor(firstName, lastName, id, title, annualSalary) {
@@ -61,15 +65,21 @@ class Employee {
     }
 }
 
-let employee1 = new Employee('Sam', 'Vanderlinden', 3245, 'Manager', 202020);
-employeeArray.push(employee1);
-console.log(employeeArray);
-console.log(employee1.title);
+function addEmployee() {
+    const employee = new Employee(
+      $('#firstNameInput').val(),
+      $('#lastNameInput').val(),
+      $('#idInput').val(),
+      $('#titleInput').val(),
+      $('#annualSalaryInput').val()
+    );
+    console.log('New employee', employee);
+  
+    // Add it to the array
+    employeeArray.push(employee);
 
-let employee2 = new Employee('Jessica', 'Vanderlinden', 2345, 'Manager', 202020);
-employeeArray.push(employee2);
-console.log(employeeArray);
+}
 
-let employee3 = new Employee($('#firstNameInput').val(), 'Vanderlinden', 2345, 'Lead', 234435);
-employeeArray.push(employee3);
-console.log(employee3.lastName);
+
+
+
